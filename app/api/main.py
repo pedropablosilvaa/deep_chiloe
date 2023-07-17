@@ -4,9 +4,11 @@ from typing import Optional
 from sqlalchemy import create_engine, MetaData, Table, select
 import models
 import os
+from dotenv import load_dotenv
 
+#load env variables
+load_dotenv()
 
-#import env variables
 #define variables of
 DATABASE_NAME = os.getenv('DATABASE_NAME')
 HOST = os.getenv('HOST')
